@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Course & Projects | e-Portfolio</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #f4f4f4; }
+        header { background: #0056b3; color: #fff; padding: 2rem 1rem; text-align: center; }
+
+        /* Style de la photo de profil */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .header-bio {
+            max-width: 600px;
+            margin: 0.5rem auto 1.5rem auto;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        /* Navigation multi-pages */
+        nav { background: #333; display: flex; justify-content: center; flex-wrap: wrap; padding: 0.5rem; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: #fff; text-decoration: none; padding: 0.75rem 1.2rem; margin: 0 0.2rem; border-radius: 4px; font-weight: 500; transition: background 0.3s; }
+        nav a:hover, nav a.active { background: #0056b3; }
+
+        .container { width: 80%; max-width: 900px; margin: auto; padding: 2rem 0; }
+        section { background: #fff; padding: 2rem; margin-bottom: 2rem; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        /* Style des boutons CV et LinkedIn */
+        .btn-container { margin-top: 1.5rem; }
+        .btn { display: inline-block; background: #fff; color: #0056b3; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; margin: 0.3rem; font-weight: bold; transition: background 0.3s, color 0.3s; }
+        .btn:hover { background: #333; color: #fff; }
+        .btn-linkedin { background: #0a66c2; color: #fff; }
+        .btn-linkedin:hover { background: #004182; }
+
+        /* Navigation Bar */
+        nav { background: #333; display: flex; justify-content: center; flex-wrap: wrap; padding: 0.5rem; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: #fff; text-decoration: none; padding: 0.75rem 1.2rem; margin: 0 0.2rem; border-radius: 4px; font-weight: 500; transition: background 0.3s; }
+        nav a:hover, nav a.active { background: #0056b3; }
+
+        .container { width: 85%; max-width: 1000px; margin: auto; padding: 2rem 0; }
+        section { background: #fff; padding: 2rem; margin-bottom: 2rem; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1 { color: #fff} 
+        h2, h3 { color: #0056b3; }
+        
+        /* Project Cards (STAR Layout) */
+        .project-card { background: #fafafa; border-left: 5px solid #0056b3; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 4px; }
+        .project-card h3 { margin-top: 0; display: flex; justify-content: space-between; align-items: center; }
+        .tech-badge { background: #e0e0e0; color: #333; font-size: 0.8rem; padding: 0.2rem 0.6rem; border-radius: 12px; font-weight: normal; }
+        .star-section { margin-bottom: 0.5rem; }
+        .star-label { font-weight: bold; color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Photo de profil -->
+    <img src="photo.jpg" alt="Photo de profil" class="profile-img">
+
+    <h1>Aubert Sacha</h1>
+    
+    <!-- Description courte -->
+    <p class="header-bio">
+        Engineering Student in Digital Sciences at ENSEEIHT (N7). 
+        Passionate about Software Engineering, AI Automation (n8n, LLMs) and Motorsport Technologies.
+    </p>
+
+    <!-- Boutons LinkedIn et CV -->
+    <div class="btn-container">
+        <a href="https://www.linkedin.com/in/sacha-aubert-96507b416" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">LinkedIn Profile</a>
+        <a href="CV english .pdf" download class="btn">Download CV (PDF)</a>
+    </div>
+        <h1>Engineering Course & Technical Projects</h1>
+        <p>ENSEEIHT — Digital Sciences Department (Sciences du Numérique)</p>
+    </header>
+
+    <nav>
+        <a href="acceuil.html">Welcome</a>
+        <a href="engineering.html" class="active">Engineering Course</a>
+        <a href="mobility.html">International Mobility</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="sports.html">Sport & Activities</a>
+        <a href="career.html">Career Development</a>
+    </nav>
+
+    <div class="container">
+        
+        <section>
+            <h2>Engineering Overview & Technical Mindset</h2>
+            <p>
+                As a Digital Sciences engineering student at ENSEEIHT (N7), my curriculum combines solid foundations in applied mathematics, computer science, and embedded systems. 
+                Below are selected technical projects demonstrating my software engineering capabilities, interest in AI automation, embedded hardware, and mobile development.
+            </p>
+        </section>
+
+        <section>
+            <h2>Featured Projects</h2>
+
+            <!-- PROJECT 1: Rally App -->
+            <div class="project-card">
+                <h3>📱 Motorsport Rally Tracking Mobile App <span class="tech-badge">Mobile Dev / APIs / Geolocation</span></h3>
+                <div class="star-section">
+                    <span class="star-label">Situation:</span> Passionate about motorsport events (WRC, Rallye Monte-Carlo), I identified a gap in real-time spectator data tracking for stage times, live maps, and driver stats.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Task:</span> Design and build a dedicated mobile application architecture capable of fetching and displaying live timing updates and route maps efficiently.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Action:</span> Developed the frontend mobile layout, integrated REST APIs for live timing feeds and interactive map mapping, and optimized local state management for offline accessibility in mountainous areas.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Result:</span> Created a functional prototype providing clean user interfaces, live stage tracking, and precise timing data visualization.
+                </div>
+            </div>
+
+            <!-- PROJECT 2: n8n AI Agents -->
+            <div class="project-card">
+                <h3>🤖 Autonomous AI Agents & Workflow Automation <span class="tech-badge">n8n / LLM APIs / Automation</span></h3>
+                <div class="star-section">
+                    <span class="star-label">Situation:</span> Modern engineering workflows often require connecting complex web services and leveraging large language models to automate repetitive tasks.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Task:</span> Build autonomous agentic workflows using n8n to connect external APIs, process dynamic data payloads, and generate automated outputs.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Action:</span> Designed custom n8n pipelines, integrated OpenAI/Anthropic APIs, handled webhooks, and implemented error handling and data transformation scripts.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Result:</span> Streamlined end-to-end multi-step processes, demonstrating strong skills in low-code automation and generative AI integration.
+                </div>
+            </div>
+
+            <!-- PROJECT 3: Arduino Robot -->
+            <div class="project-card">
+                <h3>🏎️ Autonomous Line-Following Robot <span class="tech-badge">Arduino / C++ / Embedded Systems</span></h3>
+                <div class="star-section">
+                    <span class="star-label">Situation:</span> Embedded systems coursework requiring an autonomous vehicle capable of tracking a complex track path under strict real-time constraints.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Task:</span> Design, assemble, and program a 6-sensor line-following robot capable of dynamic speed adjustment and cornering.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Action:</span> Configured an Arduino UNO R3 with a Grove Base Shield, wired IR line sensors and motor drivers, programmed Finite State Machine (FSM) logic in embedded C++, and calibrated sensor thresholds.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Result:</span> Achieved fast and reliable track navigation with zero trajectory loss during evaluation runs.
+                </div>
+            </div>
+
+            <!-- PROJECT 4: Internship -->
+            <div class="project-card">
+                <h3>💬 Customer Support Automation & Chatbots (Internship) <span class="tech-badge">Crisp AI / E-Commerce APIs / Workflow Optimization</span></h3>
+                <div class="star-section">
+                    <span class="star-label">Situation:</span> Engineering internship focused on optimizing customer support operations and workflow efficiency for an e-commerce infrastructure.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Task:</span> Automate standard customer inquiries and streamline order tracking processes using conversational AI tools.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Action:</span> Configured chatbot architectures on the Crisp platform, integrated order tracking APIs, structured decision trees, and optimized helpdesk integration.
+                </div>
+                <div class="star-section">
+                    <span class="star-label">Result:</span> Reduced manual support ticket volume, improved response speed, and enhanced overall operational workflow.
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+
+</body>
+</html>
